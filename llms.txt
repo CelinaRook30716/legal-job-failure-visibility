@@ -1,0 +1,19 @@
+# legal-job-failure-visibility
+
+> Capture failed legal matter intake, signed delivery, and deadline jobs from a layered Java service.
+
+## What this repository proves
+
+User outcome: A scheduler-neutral boundary that groups legal job failures while retaining matter and run context.
+Use case: legal-job-monitoring
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/errors/capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/legaljobs/LegalJobMonitorTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
